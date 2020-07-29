@@ -1,0 +1,45 @@
+Comienza 7:20
+
+Tips
+-Crear repositorio para todos los fron-end-challenges con readme y luego hace un push de la carpeta del nuevo challenge hecho.
+-Usar live server para ver los cambios en tiempo real
+-Buscar programa para medir pixeles en imagen (así saber tamaño,  márgenes y paddings)
+
+Heading
+
+-El subtítulo necesita un fixed width para quedar achatado.
+-El H1 tiene un bold y un No bold.
+
+Container (boxes)
+
+-llamar a los svg desde una imagen
+
+CSS
+
+-@import (url del la fuente para que no vaya en el html)
+-font-family declara la fuente por defecto para todos los hijos
+-margin 0 auto permite que se centre horizontalmente un elemento con respecto a su padre
+-Usar span para hacer bold y no crear 2 H1
+
+-Container ( Flex-wrap; justify-content: center; max-width)
+
+-Para cambiar imagen de posición con respecto al padre teiene que tener display block y un margin auto
+-transform: translateY(%) va a trasladar el elemento un % desde el tope del height hacia abajo.
+
+
+
+APRENDER 
+
+-position: 
+	static (valor por defecto que tienen los elementos y hace que estos se posiciones unos después de otros)
+	relative: Igual al static pero permite las propiedades top, bottom, left, right que mueven al elemento en la pantalla
+		pero todos los otros elementos seguiran posicionándose como si este estuviera en su posición static.
+	absolute: Elimina la referencia por completo para los otros elementos y busca el primer padre que tenga una posición a la
+		que se pueda referenciar (cualquiera menos static) y se posicionará absolutamente con respecto a este padre.
+	fixed: es como el absolute pero su posición será con respecto a la página completa o sea a el elemento html. A demás de esto 
+		se mantendrán en la misma posición si uno baja con la barra.
+
+-pseudo-elements (::after; ::before)
+	Añade elementos al html desde css.
+
+
