@@ -64,4 +64,8 @@
         margin-top: 300px;
         flex-direction: column;
     }
+
+    .card__button {
+        margin-top: 20px;
+    }
 }
