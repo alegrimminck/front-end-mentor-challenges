@@ -1,0 +1,68 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 10% auto;
+    width: 450px;
+
+    background-color: white;
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+.card__picture__image {
+    width: 100%;
+}
+
+.card__content {
+    padding: 40px; 
+    text-align: center;
+}
+
+.card__content__info {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.card__content__info > * {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.card__content__info > p {
+    line-height: 25px;
+}
+
+.card__content__plan {
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card__content__plan__picture { flex-grow: 1;}
+.card__content__plan__description { flex-grow: 2;}
+.card__content__plan__button { flex-grow: 1;}
+
+.card__content__plan__description > * {
+    text-align: left;
+}
+
+.card__content__payment {
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    padding: 15px 0;
+
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card__content__cancel {
+    margin: 0 auto;
+}
