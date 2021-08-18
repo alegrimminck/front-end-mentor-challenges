@@ -1,14 +1,13 @@
 .container {
     display: flex;
-
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     border-radius: 10px;
     overflow: hidden;
+}
+
+.attribution {
+    position: absolute;
+    top: 0;
 }
 
 .card {
@@ -40,15 +39,25 @@
 }
 
 .card__button {
+    display: inline-block;
     background-color: hsl(0, 0%, 95%);
     color: hsl(31, 77%, 52%);
 
-    padding: 15px 35px;
+    padding: 14px 33px;
     margin-top: 80px;
     border-radius: 30px;
-    border: none;
+    border: 1px solid transparent;
     font-weight: 700;
     text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.card__button:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 0.2s;
 }
 
 .card__button--suvs {
@@ -61,11 +70,14 @@
 
 @media only screen and (max-width: 900px) {
     .container {
-        margin-top: 300px;
         flex-direction: column;
     }
 
     .card__button {
         margin-top: 20px;
+    }
+    
+    body {
+        margin: 300px 0;
     }
 }
