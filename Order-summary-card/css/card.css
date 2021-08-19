@@ -1,13 +1,18 @@
+.attribution {
+    position: absolute;
+    top: 95%;
+}
+
 .card {
     display: flex;
     flex-direction: column;
-    margin: 10% auto;
-    width: 450px;
-
+    
     background-color: white;
     overflow: hidden;
-
+    
+    width: 450px;
     border-radius: 20px;
+    box-shadow: 0 20px 15px hsl(225, 100%, 91%);
 }
 
 .card__picture__image {
@@ -20,13 +25,17 @@
 }
 
 .card__content__info {
-    width: 300px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
 .card__content__info > * {
     text-align: center;
     padding-bottom: 10px;
+}
+
+.card__content__info__title {
+    font-weight: 900;
 }
 
 .card__content__info > p {
@@ -40,29 +49,64 @@
 
     border-radius: 10px;
     padding: 15px;
+    margin: 20px 0;
 }
 
 .card__content__plan__picture { flex-grow: 1;}
 .card__content__plan__description { flex-grow: 2;}
-.card__content__plan__button { flex-grow: 1;}
+.card__content__plan__change { flex-grow: 1; }
+.card__content__plan__change:hover { color: blue;}
 
 .card__content__plan__description > * {
     text-align: left;
 }
 
 .card__content__payment {
-    border: none;
+    display: inline-block;
+    text-decoration: none;
+
+    border: 1px solid transparent;
     border-radius: 10px;
-    background-color: transparent;
+    
     width: 100%;
     padding: 15px 0;
+    margin: 20px 0;
 
     background-color: hsl(245, 75%, 52%);
     color: white;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 14px;
+
+    box-shadow: 0 15px 18px hsl(245, 75%, 92%);
+
+    transition: 0.2s;
+}
+
+.card__content__payment:hover {
+    border: 1px solid hsl(245, 75%, 52%);
+    background-color: transparent;
+    color: hsl(245, 75%, 52%);
+    transition: 0.2s;
 }
 
 .card__content__cancel {
-    margin: 0 auto;
+    display: inline-block;
+    margin: 5px 0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card__content__cancel:hover {
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+    .card {
+        width: 350px;
+    }
+
+    .card__content {
+        padding: 20px 25px;
+    }
 }
