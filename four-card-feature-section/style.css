@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Primary colors */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* Neutral colors */
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif; /* Weights 200, 400, 600 */
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    background-color: var(--Very-Light-Gray);
+}
+
+.header {
+    margin: 50px auto 100px auto;
+    text-align: center;
+    width: 370px;
+}
+
+.header__title {
+    color: var(--Very-Dark-Blue);
+    font-weight: 200;
+}
+
+.header__title span {
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+}
+
+.header__paragraph {
+    margin: 15px 0;
+}
+
+.card {
+    position: relative;
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0 10px 30px -15px var(--Grayish-Blue);
+    margin-bottom: 30px;
+}
+
+.card--super {border-top: 4px solid var(--cyan);}
+.card--team {border-top: 4px solid var(--red);}
+.card--karma {border-top: 4px solid var(--orange);}
+.card--calculator {border-top: 4px solid var(--blue);}
+
+.card__title {
+    color: var(--Very-Dark-Blue);
+    font-size: 26px;
+}
+
+.card__icon {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0px;
+}
+
+@media only screen and (min-width: 900px){
+    .card {margin-bottom: 0;}
+    
+    body {
+        height: 100vh;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "aa bb cc"
+            "aa dd cc";
+        gap: 30px;
+    }
+
+    .card--super {
+        grid-area: aa;
+        align-self: center;
+    }
+
+    .card--team {
+        grid-area: bb;
+    }
+
+    .card--karma {
+        grid-area: dd;
+    }
+
+    .card--calculator {
+        grid-area: cc;
+        align-self: center;
+    }
+}
