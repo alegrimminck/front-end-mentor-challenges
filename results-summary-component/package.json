@@ -1,23 +1,19 @@
 {
-  "name": "tailwind-css-starter-postcss",
-  "version": "1.0.0",
-  "description": "A starter template for very simple projects (no frameworks) with Tailwind CSS setup as a PostCSS plugin. You only need to install NPM.",
-  "main": "index.js",
+  "name": "results-summary-component",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "postcss ./src/styles.css -o ./public/dist/styles.css",
-    "watch": "onchange 'tailwind.config.js' './public/**/*.html' './src/**/*.css' -- npm run build",
-    "prod": "NODE_ENV=production postcss ./src/styles.css -o ./public/dist/styles.css"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "autoprefixer": "^10.2.1",
-    "live-server": "^1.2.2",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.0.2"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "onchange": "^7.1.0"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.5",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.2.0"
   }
 }
