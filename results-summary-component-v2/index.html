@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="md:h-screen">
+    <main
+      class="font-hanken md:flex md:h-full md:items-center md:justify-center"
+    >
+      <div class="shadow-2xl md:flex md:rounded-3xl">
+        <div
+          class="flex flex-col items-center justify-between rounded-b-3xl bg-gradient-to-t from-royal-blue to-slate-blue py-6 px-10 text-white md:w-[330px] md:rounded-3xl md:px-16"
+        >
+          <p class="text-lg opacity-70 md:mt-3 md:text-xl">Your result</p>
+          <div
+            class="my-4 flex h-[140px] w-[140px] flex-col items-center justify-center rounded-full bg-gradient-to-t from-persian-blue to-violet-blue md:my-0 md:h-[170px] md:w-[170px]"
+          >
+            <p class="my-1 mt-4 text-6xl font-extrabold">76</p>
+            <p class="opacity-60">of 100</p>
+          </div>
+          <p class="mb-2 text-2xl font-bold md:mb-0">Great</p>
+          <p class="mb-3 text-center opacity-70 md:text-sm">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3 p-6 md:w-[330px] md:p-9">
+          <p class="mb-3 text-lg font-bold">Summary</p>
+          <div
+            class="flex justify-between rounded-lg bg-light-red bg-opacity-5 p-4 md:p-3"
+          >
+            <div class="flex items-center gap-2">
+              <img src="./src/assets/icon-reaction.svg" alt="Reaction icon" />
+              <p class="text-light-red">Reaction</p>
+            </div>
+            <p class="font-bold">80 <span class="opacity-40">/ 100</span></p>
+          </div>
+          <div
+            class="flex justify-between rounded-lg bg-orangey-yellow bg-opacity-5 p-4 md:p-3"
+          >
+            <div class="flex items-center gap-2">
+              <img src="./src/assets/icon-memory.svg" alt="Memory icon" />
+              <p class="text-orangey-yellow">Memory</p>
+            </div>
+            <p class="font-bold">92 <span class="opacity-40">/ 100</span></p>
+          </div>
+          <div
+            class="flex justify-between rounded-lg bg-green-teal bg-opacity-5 p-4 md:p-3"
+          >
+            <div class="flex items-center gap-2">
+              <img src="./src/assets/icon-verbal.svg" alt="Verbal icon" />
+              <p class="text-green-teal">Verbal</p>
+            </div>
+            <p class="font-bold">61 <span class="opacity-40">/ 100</span></p>
+          </div>
+          <div
+            class="flex justify-between rounded-lg bg-cobalt-blue bg-opacity-5 p-4 md:p-3"
+          >
+            <div class="flex items-center gap-2">
+              <img src="./src/assets/icon-visual.svg" alt="Visual icon" />
+              <p class="text-cobalt-blue">Visual</p>
+            </div>
+            <p class="font-bold">72 <span class="opacity-40">/ 100</span></p>
+          </div>
+          <button
+            class="btn btn-primary mt-2 w-full rounded-full bg-gray-blue py-3 text-center text-lg font-bold text-white hover:bg-gradient-to-t hover:from-royal-blue hover:to-slate-blue md:mt-4"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
