@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-desktop {
+    background-image: url("./public/images/bg-desktop.svg");
+    background-size: 100vw;
+  }
+}
