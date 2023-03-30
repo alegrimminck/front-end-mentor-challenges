@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-svgs-mobile {
+    background-image: url("./public/images/bg-pattern-top.svg"),
+      url("./public/images/bg-pattern-bottom.svg");
+    background-position: 300% -120%, -200% 200%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 120%;
+  }
+
+  .bg-svgs-desktop {
+    background-image: url("./public/images/bg-pattern-top.svg"),
+      url("./public/images/bg-pattern-bottom.svg");
+    background-position: -50% 300%, 150% -300%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60%;
+  }
+}
