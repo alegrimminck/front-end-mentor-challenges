@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .quotation-mobile {
+    background-image: url("./public/images/bg-pattern-quotation.svg");
+    background-position: 90% 0%;
+    background-repeat: no-repeat;
+  }
+  .quotation-desktop {
+    background-position: 80% 0%;
+  }
+}
