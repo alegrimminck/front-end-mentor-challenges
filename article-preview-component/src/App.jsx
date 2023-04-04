@@ -7,7 +7,7 @@ function App() {
       <div className="relative h-fit w-[330px] overflow-hidden rounded-lg shadow-xl md:flex md:w-fit md:overflow-visible">
         <img
           className="h-[200px] w-full object-cover object-top md:h-auto md:w-[285px] md:rounded-l-lg md:object-left"
-          src="../public/images/drawers.jpg"
+          src="/images/drawers.jpg"
           alt=""
         />
         <div className="bg-white px-9 md:w-[445px] md:rounded-r-lg">
@@ -23,7 +23,7 @@ function App() {
           <div className="mt-8 flex items-center justify-between pb-4 md:mt-4 md:pb-8">
             <div className="flex items-center gap-4">
               <img
-                src="../public/images/avatar-michelle.jpg"
+                src="/images/avatar-michelle.jpg"
                 className="h-10 w-10 rounded-full"
                 alt=""
               />
@@ -61,9 +61,9 @@ function App() {
           <div className="absolute bottom-0 left-0 flex h-[74px] w-full items-center gap-5 bg-very-dark-grayish-blue pl-8 text-white md:-right-16 md:bottom-[90px] md:left-auto md:h-[55px] md:w-[245px] md:rounded-lg md:shadow-lg">
             <p className="tracking-[0.4em] opacity-50">SHARE</p>
             <div className="flex gap-4">
-              <img src="../public/images/icon-facebook.svg" alt="" />
-              <img src="../public/images/icon-twitter.svg" alt="" />
-              <img src="../public/images/icon-pinterest.svg" alt="" />
+              <img src="/images/icon-facebook.svg" alt="" />
+              <img src="/images/icon-twitter.svg" alt="" />
+              <img src="/images/icon-pinterest.svg" alt="" />
             </div>
             <div className="absolute -bottom-2 left-[49%] h-4 w-4 rotate-45 bg-very-dark-grayish-blue"></div>
           </div>
