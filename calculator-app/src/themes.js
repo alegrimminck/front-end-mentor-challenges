@@ -1,4 +1,4 @@
-export const themes = {
+export const THEMES = {
   1: {
     id: "1",
     "bg-main": "bg-1-bg-main",
@@ -15,7 +15,6 @@ export const themes = {
   },
   2: {
     id: "2",
-    "bg-toggle-button": "",
     "bg-main": "bg-2-bg-main",
     "bg-toggle": "bg-2-bg-toggle",
     "bg-screen": "bg-2-bg-screen",
@@ -30,7 +29,6 @@ export const themes = {
   },
   3: {
     id: "3",
-    "bg-toggle-button": "",
     "bg-main": "bg-3-bg-main",
     "bg-toggle": "bg-3-bg-toggle",
     "bg-screen": "bg-3-bg-screen",

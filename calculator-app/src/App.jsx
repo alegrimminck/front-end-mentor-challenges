@@ -2,7 +2,7 @@ import { useState } from "react";
 import Display from "./components/Display";
 import Inputs from "./components/Inputs";
 import Theme from "./components/Theme";
-import themes from "./themes";
+import { THEMES } from "./themes.js";
 
 function App() {
   const initialState = {
@@ -11,16 +11,16 @@ function App() {
     secondNum: "",
   };
 
-  const [theme, setTheme] = useState(themes["1"]);
+  const [theme, setTheme] = useState(THEMES["1"]);
   const [input, setInput] = useState(initialState);
 
-  const handleTheme = (theme) => {
-    if (theme === "1") {
-      setTheme(themes["1"]);
-    } else if (theme === "2") {
-      setTheme(themes["2"]);
-    } else if (theme === "3") {
-      setTheme(themes["3"]);
+  const handleTheme = (themeId) => {
+    if (themeId === "1") {
+      setTheme(THEMES["1"]);
+    } else if (themeId === "2") {
+      setTheme(THEMES["2"]);
+    } else if (themeId === "3") {
+      setTheme(THEMES["3"]);
     }
   };
 
