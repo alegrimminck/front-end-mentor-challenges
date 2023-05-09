@@ -1,6 +1,9 @@
 import { useState } from "react";
 
 export default function Theme({ handleClick, theme }) {
+  const handleToggleClick = () => {
+    handleClick(theme.id === "3" ? "1" : (theme.id * 1 + 1).toString());
+  };
   return (
     <div
       className={`flex items-center justify-between ${theme["text-secondary"]}`}
@@ -14,36 +17,15 @@ export default function Theme({ handleClick, theme }) {
           <p className="w-2">3</p>
         </div>
         <div
-          className={`col-start-2 row-start-2 flex h-[26px] w-[70px] items-center justify-center gap-x-1 rounded-full ${theme["bg-toggle"]}`}
+          className={`col-start-2 row-start-2 flex h-[26px] w-[70px] items-center rounded-full px-2 hover:cursor-pointer ${theme["bg-toggle"]} relative`}
+          onClick={() => handleToggleClick()}
         >
-          <Button
-            theme={theme}
-            handleButtonClick={handleClick}
-            val="1"
-          ></Button>
-          <Button
-            theme={theme}
-            handleButtonClick={handleClick}
-            val="2"
-          ></Button>
-          <Button
-            theme={theme}
-            handleButtonClick={handleClick}
-            val="3"
-          ></Button>
+          <button
+            className={`h-4 w-4 rounded-full ${theme["key-2-bg"]} ${theme["toggle"]} transition-{left} relative duration-150 ease-in-out`}
+            label="theme"
+          ></button>
         </div>
       </div>
     </div>
-  );
-}
-
-function Button({ theme, handleButtonClick, val }) {
-  return (
-    <button
-      onClick={() => handleButtonClick(val)}
-      className={`h-4 w-4 rounded-full ${theme["key-2-bg"]} ${
-        val === theme.id ? "visible" : "bg-opacity-0"
-      }`}
-    ></button>
   );
 }

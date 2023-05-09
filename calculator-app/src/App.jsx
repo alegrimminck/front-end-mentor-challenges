@@ -15,13 +15,7 @@ function App() {
   const [input, setInput] = useState(initialState);
 
   const handleTheme = (themeId) => {
-    if (themeId === "1") {
-      setTheme(THEMES["1"]);
-    } else if (themeId === "2") {
-      setTheme(THEMES["2"]);
-    } else if (themeId === "3") {
-      setTheme(THEMES["3"]);
-    }
+    setTheme(THEMES[themeId]);
   };
 
   const handleInputChange = (symbol) => {

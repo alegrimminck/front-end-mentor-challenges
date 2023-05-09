@@ -1,6 +1,7 @@
 export const THEMES = {
   1: {
     id: "1",
+    toggle: "bg-1-key-first left-0",
     "bg-main": "bg-1-bg-main",
     "bg-toggle": "bg-1-bg-toggle",
     "bg-screen": "bg-1-bg-screen",
@@ -15,6 +16,7 @@ export const THEMES = {
   },
   2: {
     id: "2",
+    toggle: "bg-2-key-first left-[35%]",
     "bg-main": "bg-2-bg-main",
     "bg-toggle": "bg-2-bg-toggle",
     "bg-screen": "bg-2-bg-screen",
@@ -29,6 +31,7 @@ export const THEMES = {
   },
   3: {
     id: "3",
+    toggle: "bg-3-key-first left-[70%]",
     "bg-main": "bg-3-bg-main",
     "bg-toggle": "bg-3-bg-toggle",
     "bg-screen": "bg-3-bg-screen",
